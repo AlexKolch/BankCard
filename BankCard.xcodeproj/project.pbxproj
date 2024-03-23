@@ -10,9 +10,14 @@
 		FC488CEF2B17B9220030500F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC488CEE2B17B9220030500F /* AppDelegate.swift */; };
 		FC488CF12B17B9220030500F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC488CF02B17B9220030500F /* SceneDelegate.swift */; };
 		FC488CF32B17B9220030500F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC488CF22B17B9220030500F /* ViewController.swift */; };
-		FC488CF62B17B9220030500F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC488CF42B17B9220030500F /* Main.storyboard */; };
 		FC488CF82B17B9230030500F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC488CF72B17B9230030500F /* Assets.xcassets */; };
 		FC488CFB2B17B9230030500F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC488CF92B17B9230030500F /* LaunchScreen.storyboard */; };
+		FC488D062B17B9FB0030500F /* ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC488D052B17B9FB0030500F /* ViewBuilder.swift */; };
+		FC488D082B17BA0D0030500F /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC488D072B17BA0D0030500F /* ViewManager.swift */; };
+		FC609E8B2B658A2400F88A44 /* UILabel.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC609E8A2B658A2400F88A44 /* UILabel.ext.swift */; };
+		FCDEEFBF2B1DDCA200829636 /* UIColor.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDEEFBE2B1DDCA200829636 /* UIColor.ext.swift */; };
+		FCDEEFC12B1E602300829636 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDEEFC02B1E602300829636 /* ColorCell.swift */; };
+		FCDEEFC32B1E603100829636 /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDEEFC22B1E603100829636 /* IconCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +25,15 @@
 		FC488CEE2B17B9220030500F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC488CF02B17B9220030500F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FC488CF22B17B9220030500F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FC488CF52B17B9220030500F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC488CF72B17B9230030500F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC488CFA2B17B9230030500F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC488CFC2B17B9230030500F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC488D052B17B9FB0030500F /* ViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilder.swift; sourceTree = "<group>"; };
+		FC488D072B17BA0D0030500F /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
+		FC609E8A2B658A2400F88A44 /* UILabel.ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.ext.swift; sourceTree = "<group>"; };
+		FCDEEFBE2B1DDCA200829636 /* UIColor.ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.ext.swift; sourceTree = "<group>"; };
+		FCDEEFC02B1E602300829636 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		FCDEEFC22B1E603100829636 /* IconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,44 @@
 		FC488CED2B17B9220030500F /* BankCard */ = {
 			isa = PBXGroup;
 			children = (
+				FC488D022B17B9C50030500F /* Ext */,
+				FC488D032B17B9D00030500F /* View */,
 				FC488CEE2B17B9220030500F /* AppDelegate.swift */,
 				FC488CF02B17B9220030500F /* SceneDelegate.swift */,
 				FC488CF22B17B9220030500F /* ViewController.swift */,
-				FC488CF42B17B9220030500F /* Main.storyboard */,
 				FC488CF72B17B9230030500F /* Assets.xcassets */,
 				FC488CF92B17B9230030500F /* LaunchScreen.storyboard */,
 				FC488CFC2B17B9230030500F /* Info.plist */,
 			);
 			path = BankCard;
+			sourceTree = "<group>";
+		};
+		FC488D022B17B9C50030500F /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				FCDEEFBE2B1DDCA200829636 /* UIColor.ext.swift */,
+				FC609E8A2B658A2400F88A44 /* UILabel.ext.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		FC488D032B17B9D00030500F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC488D052B17B9FB0030500F /* ViewBuilder.swift */,
+				FC488D072B17BA0D0030500F /* ViewManager.swift */,
+				FC488D042B17B9DF0030500F /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC488D042B17B9DF0030500F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FCDEEFC02B1E602300829636 /* ColorCell.swift */,
+				FCDEEFC22B1E603100829636 /* IconCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +134,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					FC488CEA2B17B9220030500F = {
 						CreatedOnToolsVersion = 14.2;
@@ -127,7 +166,6 @@
 			files = (
 				FC488CFB2B17B9230030500F /* LaunchScreen.storyboard in Resources */,
 				FC488CF82B17B9230030500F /* Assets.xcassets in Resources */,
-				FC488CF62B17B9220030500F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +178,12 @@
 			files = (
 				FC488CF32B17B9220030500F /* ViewController.swift in Sources */,
 				FC488CEF2B17B9220030500F /* AppDelegate.swift in Sources */,
+				FCDEEFC32B1E603100829636 /* IconCell.swift in Sources */,
+				FCDEEFC12B1E602300829636 /* ColorCell.swift in Sources */,
+				FCDEEFBF2B1DDCA200829636 /* UIColor.ext.swift in Sources */,
+				FC488D082B17BA0D0030500F /* ViewManager.swift in Sources */,
+				FC488D062B17B9FB0030500F /* ViewBuilder.swift in Sources */,
+				FC609E8B2B658A2400F88A44 /* UILabel.ext.swift in Sources */,
 				FC488CF12B17B9220030500F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +191,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FC488CF42B17B9220030500F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC488CF52B17B9220030500F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FC488CF92B17B9230030500F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -202,6 +238,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -216,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -262,6 +299,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -270,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,9 +330,8 @@
 				INFOPLIST_FILE = BankCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +339,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AlexKolch.BankCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,9 +360,8 @@
 				INFOPLIST_FILE = BankCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +369,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AlexKolch.BankCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
